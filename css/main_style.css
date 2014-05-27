@@ -1,0 +1,1788 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+/* scss main style*/
+/* scss main style*/
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?19361446");
+  src: url("../font/fontello.eot?19361446#iefix") format("embedded-opentype"), url("../font/fontello.woff?19361446") format("woff"), url("../font/fontello.ttf?19361446") format("truetype"), url("../font/fontello.svg?19361446#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?19361446#fontello') format('svg');
+  }
+}
+*/
+/* line 23, scss/partials/_typography.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 54, scss/partials/_typography.scss */
+.icon-mail:before {
+  content: '\e803';
+}
+
+/* 'î ƒ' */
+/* line 55, scss/partials/_typography.scss */
+.icon-cloud:before {
+  content: '\e800';
+}
+
+/* 'î €' */
+/* line 56, scss/partials/_typography.scss */
+.icon-ok:before {
+  content: '\e802';
+}
+
+/* 'î ‚' */
+/* line 57, scss/partials/_typography.scss */
+.icon-cancel:before {
+  content: '\e805';
+}
+
+/* 'î …' */
+/* line 58, scss/partials/_typography.scss */
+.icon-cancel-circled:before {
+  content: '\e806';
+}
+
+/* 'î †' */
+/* line 59, scss/partials/_typography.scss */
+.icon-plus-circled:before {
+  content: '\e807';
+}
+
+/* 'î ‡' */
+/* line 60, scss/partials/_typography.scss */
+.icon-plus-squared:before {
+  content: '\e808';
+}
+
+/* 'î ˆ' */
+/* line 61, scss/partials/_typography.scss */
+.icon-plus-squared-small:before {
+  content: '\e809';
+}
+
+/* 'î ‰' */
+/* line 62, scss/partials/_typography.scss */
+.icon-minus-circled:before {
+  content: '\e80c';
+}
+
+/* 'î Œ' */
+/* line 63, scss/partials/_typography.scss */
+.icon-minus-squared:before {
+  content: '\e80b';
+}
+
+/* 'î ‹' */
+/* line 64, scss/partials/_typography.scss */
+.icon-minus-squared-alt:before {
+  content: '\e80a';
+}
+
+/* 'î Š' */
+/* line 65, scss/partials/_typography.scss */
+.icon-link:before {
+  content: '\e82a';
+}
+
+/* 'î ª' */
+/* line 66, scss/partials/_typography.scss */
+.icon-lock:before {
+  content: '\e82b';
+}
+
+/* 'î «' */
+/* line 67, scss/partials/_typography.scss */
+.icon-thumbs-up:before {
+  content: '\e829';
+}
+
+/* 'î ©' */
+/* line 68, scss/partials/_typography.scss */
+.icon-download-cloud-1:before {
+  content: '\e81b';
+}
+
+/* 'î ›' */
+/* line 69, scss/partials/_typography.scss */
+.icon-upload-cloud:before {
+  content: '\e81c';
+}
+
+/* 'î œ' */
+/* line 70, scss/partials/_typography.scss */
+.icon-docs:before {
+  content: '\e821';
+}
+
+/* 'î ¡' */
+/* line 71, scss/partials/_typography.scss */
+.icon-cog:before {
+  content: '\e81e';
+}
+
+/* 'î ž' */
+/* line 72, scss/partials/_typography.scss */
+.icon-wrench:before {
+  content: '\e81f';
+}
+
+/* 'î Ÿ' */
+/* line 73, scss/partials/_typography.scss */
+.icon-calendar:before {
+  content: '\e81d';
+}
+
+/* 'î ' */
+/* line 74, scss/partials/_typography.scss */
+.icon-calendar-empty:before {
+  content: '\e822';
+}
+
+/* 'î ¢' */
+/* line 75, scss/partials/_typography.scss */
+.icon-clock:before {
+  content: '\e815';
+}
+
+/* 'î •' */
+/* line 76, scss/partials/_typography.scss */
+.icon-user:before {
+  content: '\e804';
+}
+
+/* 'î „' */
+/* line 77, scss/partials/_typography.scss */
+.icon-up-dir:before {
+  content: '\e80e';
+}
+
+/* 'î Ž' */
+/* line 78, scss/partials/_typography.scss */
+.icon-left-dir:before {
+  content: '\e810';
+}
+
+/* 'î ' */
+/* line 79, scss/partials/_typography.scss */
+.icon-right-dir:before {
+  content: '\e80f';
+}
+
+/* 'î ' */
+/* line 80, scss/partials/_typography.scss */
+.icon-down-open:before {
+  content: '\e826';
+}
+
+/* 'î ¦' */
+/* line 81, scss/partials/_typography.scss */
+.icon-left-open:before {
+  content: '\e825';
+}
+
+/* 'î ¥' */
+/* line 82, scss/partials/_typography.scss */
+.icon-right-open:before {
+  content: '\e824';
+}
+
+/* 'î ¤' */
+/* line 83, scss/partials/_typography.scss */
+.icon-up-open:before {
+  content: '\e827';
+}
+
+/* 'î §' */
+/* line 84, scss/partials/_typography.scss */
+.icon-angle-left:before {
+  content: '\e811';
+}
+
+/* 'î ‘' */
+/* line 85, scss/partials/_typography.scss */
+.icon-angle-right:before {
+  content: '\e812';
+}
+
+/* 'î ’' */
+/* line 86, scss/partials/_typography.scss */
+.icon-angle-up:before {
+  content: '\e813';
+}
+
+/* 'î “' */
+/* line 87, scss/partials/_typography.scss */
+.icon-angle-down:before {
+  content: '\e814';
+}
+
+/* 'î ”' */
+/* line 88, scss/partials/_typography.scss */
+.icon-down-big:before {
+  content: '\e819';
+}
+
+/* 'î ™' */
+/* line 89, scss/partials/_typography.scss */
+.icon-left-big:before {
+  content: '\e816';
+}
+
+/* 'î –' */
+/* line 90, scss/partials/_typography.scss */
+.icon-right-big:before {
+  content: '\e817';
+}
+
+/* 'î —' */
+/* line 91, scss/partials/_typography.scss */
+.icon-up-big:before {
+  content: '\e818';
+}
+
+/* 'î ˜' */
+/* line 92, scss/partials/_typography.scss */
+.icon-laptop:before {
+  content: '\e823';
+}
+
+/* 'î £' */
+/* line 93, scss/partials/_typography.scss */
+.icon-cloud-1:before {
+  content: '\e81a';
+}
+
+/* 'î š' */
+/* line 94, scss/partials/_typography.scss */
+.icon-list-bullet:before {
+  content: '\e820';
+}
+
+/* 'î  ' */
+/* line 95, scss/partials/_typography.scss */
+.icon-facebook:before {
+  content: '\e828';
+}
+
+/* 'î ¨' */
+/* line 96, scss/partials/_typography.scss */
+.icon-download-cloud:before {
+  content: '\e801';
+}
+
+/* 'î ' */
+/* line 97, scss/partials/_typography.scss */
+.icon-down-dir:before {
+  content: '\e80d';
+}
+
+/* 'î ' */
+/* scss main style*/
+/* scss main style*/
+/* grids.scss*/
+/* all */
+/* line 9, scss/modules/_header.scss */
+p, a, h1, h2, h3, .jumbotron_ .main .trialBox #trialForm h4, h4, h5, h6, small, strong {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 13, scss/modules/_header.scss */
+[role="top-bar"] {
+  background: #393939;
+  height: 38px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 18, scss/modules/_header.scss */
+[role="top-bar"] [role="top-nav"] {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 21, scss/modules/_header.scss */
+[role="top-bar"] [role="top-nav"] ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+/* line 25, scss/modules/_header.scss */
+[role="top-bar"] [role="top-nav"] ul li {
+  list-style: none;
+  display: inline-block;
+  height: inherit;
+}
+/* line 29, scss/modules/_header.scss */
+[role="top-bar"] [role="top-nav"] ul li a {
+  color: #f6f6f6;
+  text-decoration: none;
+  display: block;
+  padding: 10px 4px 6px;
+  font-size: small;
+  height: inherit;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  transition: color 1s ease;
+}
+/* line 38, scss/modules/_header.scss */
+[role="top-bar"] [role="top-nav"] ul li a:hover {
+  color: #8abcf3;
+}
+
+/* line 45, scss/modules/_header.scss */
+[role="banner"] {
+  float: left;
+  height: 85px;
+  width: 100%;
+}
+/* line 49, scss/modules/_header.scss */
+[role="banner"] .max-width {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 52, scss/modules/_header.scss */
+[role="banner"] .max-width h1 {
+  float: left;
+}
+/* line 54, scss/modules/_header.scss */
+[role="banner"] .max-width h1 a img {
+  border: 0;
+}
+/* line 58, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] {
+  float: right;
+  max-width: 80%;
+}
+/* line 61, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul {
+  margin: 18px 0 10px;
+  padding: 0;
+  float: left;
+  background-color: #8abcf3;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 67, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li.dropdown.open {
+  background-color: #2f6fb2;
+}
+/* line 69, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li.dropdown.open a {
+  background-color: #2f6fb2;
+}
+/* line 72, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li.dropdown.open .dropdown-menu li a {
+  background-color: #fff;
+}
+/* line 74, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li.dropdown.open .dropdown-menu li a:hover {
+  background-color: #2f6fb2;
+}
+/* line 79, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li {
+  list-style: none;
+  display: inline-block;
+  height: inherit;
+}
+/* line 83, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li a {
+  color: #f6f6f6;
+  text-decoration: none;
+  display: block;
+  padding: 13px 15px;
+  font-size: medium;
+  background-color: #8abcf3;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-transition: color 0s ease;
+  -moz-transition: color 0s ease;
+  -o-transition: color 0s ease;
+  -ms-transition: color 0s ease;
+  transition: color 0s ease;
+  -webkit-transition: background-color 0s ease;
+  -moz-transition: background-color 0s ease;
+  -o-transition: background-color 0s ease;
+  -ms-transition: background-color 0s ease;
+  transition: background-color 0s ease;
+}
+/* line 95, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li a:hover, [role="banner"] .max-width [role="main-nav"] ul li a:active {
+  color: #b1d2f6;
+  background-color: #2f6fb2;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 0;
+}
+/* line 97, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li .dropdown-menu {
+  background: white;
+  margin: 5px auto;
+  height: auto !important;
+}
+/* line 101, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li .dropdown-menu li {
+  color: #fff;
+  padding: 3px;
+  display: block;
+}
+/* line 105, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li .dropdown-menu li a {
+  color: #2f6fb2;
+  display: block;
+  font-size: small;
+  background-color: #fff;
+  -webkit-transition: color 0s ease;
+  -moz-transition: color 0s ease;
+  -o-transition: color 0s ease;
+  -ms-transition: color 0s ease;
+  transition: color 0s ease;
+  -webkit-transition: background-color 0s ease;
+  -moz-transition: background-color 0s ease;
+  -o-transition: background-color 0s ease;
+  -ms-transition: background-color 0s ease;
+  transition: background-color 0s ease;
+  padding: 5px 8px;
+}
+/* line 113, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] ul li .dropdown-menu li a:hover {
+  color: white;
+  background-color: #8abcf3;
+}
+/* line 122, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] li.dropdown.open {
+  background-color: #2f6fb2;
+}
+/* line 124, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] li.dropdown.open a {
+  background-color: #2f6fb2;
+}
+/* line 126, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] li.dropdown.open a ul li a {
+  background-color: #fff;
+}
+/* line 131, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer {
+  position: relative;
+  float: left;
+  margin: 18px 2px 10px 10px;
+}
+/* line 135, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginButton {
+  display: inline-block;
+  float: left;
+  background: #2f6fb2;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  z-index: 30;
+  cursor: pointer;
+  padding: 11px;
+  color: white;
+  font-size: medium;
+  text-transform: uppercase;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  transition: color 1s ease;
+  border: 2px solid #2f6fb2;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 151, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginButton:hover, [role="banner"] .max-width [role="main-nav"] #loginContainer #loginButton.active {
+  text-decoration: none;
+  background: #fff;
+  color: #2f6fb2;
+}
+/* line 157, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginBox {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  display: none;
+  z-index: 29;
+  font-family: "Lato", sans-serif;
+  background: url("../img/arrow-up.png") no-repeat scroll 300px 0;
+  padding-top: 10px;
+}
+/* line 166, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginBox #loginForm {
+  padding: 20px 35px 35px;
+  border: 1px solid #DEDEDE;
+  border-top: 0;
+  background: #fff;
+}
+/* line 171, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginBox #loginForm input {
+  width: 290px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  border: 1px solid #c3c3c3;
+  padding: 8px 10px;
+}
+/* line 178, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginBox #loginForm input:focus {
+  outline: 0 none;
+  border: 1px solid #b1d2f6;
+}
+/* line 183, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginBox #loginForm button {
+  background: #2f6fb2;
+  color: white;
+  padding: 10px;
+  border: 0;
+  width: 294px;
+  font-family: "Lato", sans-serif;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background-color 0s ease;
+  -moz-transition: background-color 0s ease;
+  -o-transition: background-color 0s ease;
+  -ms-transition: background-color 0s ease;
+  transition: background-color 0s ease;
+  margin-top: 15px;
+}
+/* line 193, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginBox #loginForm button:hover {
+  color: #fff;
+  background: #8abcf3;
+}
+/* line 199, scss/modules/_header.scss */
+[role="banner"] .max-width [role="main-nav"] #loginContainer #loginBox .boxTitle {
+  color: #fff;
+  background: #2f6fb2;
+  width: inherit;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: medium;
+}
+
+/* scss main style*/
+/* scss main style*/
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?19361446");
+  src: url("../font/fontello.eot?19361446#iefix") format("embedded-opentype"), url("../font/fontello.woff?19361446") format("woff"), url("../font/fontello.ttf?19361446") format("truetype"), url("../font/fontello.svg?19361446#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?19361446#fontello') format('svg');
+  }
+}
+*/
+/* line 23, scss/partials/_typography.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 54, scss/partials/_typography.scss */
+.icon-mail:before {
+  content: '\e803';
+}
+
+/* 'î ƒ' */
+/* line 55, scss/partials/_typography.scss */
+.icon-cloud:before {
+  content: '\e800';
+}
+
+/* 'î €' */
+/* line 56, scss/partials/_typography.scss */
+.icon-ok:before {
+  content: '\e802';
+}
+
+/* 'î ‚' */
+/* line 57, scss/partials/_typography.scss */
+.icon-cancel:before {
+  content: '\e805';
+}
+
+/* 'î …' */
+/* line 58, scss/partials/_typography.scss */
+.icon-cancel-circled:before {
+  content: '\e806';
+}
+
+/* 'î †' */
+/* line 59, scss/partials/_typography.scss */
+.icon-plus-circled:before {
+  content: '\e807';
+}
+
+/* 'î ‡' */
+/* line 60, scss/partials/_typography.scss */
+.icon-plus-squared:before {
+  content: '\e808';
+}
+
+/* 'î ˆ' */
+/* line 61, scss/partials/_typography.scss */
+.icon-plus-squared-small:before {
+  content: '\e809';
+}
+
+/* 'î ‰' */
+/* line 62, scss/partials/_typography.scss */
+.icon-minus-circled:before {
+  content: '\e80c';
+}
+
+/* 'î Œ' */
+/* line 63, scss/partials/_typography.scss */
+.icon-minus-squared:before {
+  content: '\e80b';
+}
+
+/* 'î ‹' */
+/* line 64, scss/partials/_typography.scss */
+.icon-minus-squared-alt:before {
+  content: '\e80a';
+}
+
+/* 'î Š' */
+/* line 65, scss/partials/_typography.scss */
+.icon-link:before {
+  content: '\e82a';
+}
+
+/* 'î ª' */
+/* line 66, scss/partials/_typography.scss */
+.icon-lock:before {
+  content: '\e82b';
+}
+
+/* 'î «' */
+/* line 67, scss/partials/_typography.scss */
+.icon-thumbs-up:before {
+  content: '\e829';
+}
+
+/* 'î ©' */
+/* line 68, scss/partials/_typography.scss */
+.icon-download-cloud-1:before {
+  content: '\e81b';
+}
+
+/* 'î ›' */
+/* line 69, scss/partials/_typography.scss */
+.icon-upload-cloud:before {
+  content: '\e81c';
+}
+
+/* 'î œ' */
+/* line 70, scss/partials/_typography.scss */
+.icon-docs:before {
+  content: '\e821';
+}
+
+/* 'î ¡' */
+/* line 71, scss/partials/_typography.scss */
+.icon-cog:before {
+  content: '\e81e';
+}
+
+/* 'î ž' */
+/* line 72, scss/partials/_typography.scss */
+.icon-wrench:before {
+  content: '\e81f';
+}
+
+/* 'î Ÿ' */
+/* line 73, scss/partials/_typography.scss */
+.icon-calendar:before {
+  content: '\e81d';
+}
+
+/* 'î ' */
+/* line 74, scss/partials/_typography.scss */
+.icon-calendar-empty:before {
+  content: '\e822';
+}
+
+/* 'î ¢' */
+/* line 75, scss/partials/_typography.scss */
+.icon-clock:before {
+  content: '\e815';
+}
+
+/* 'î •' */
+/* line 76, scss/partials/_typography.scss */
+.icon-user:before {
+  content: '\e804';
+}
+
+/* 'î „' */
+/* line 77, scss/partials/_typography.scss */
+.icon-up-dir:before {
+  content: '\e80e';
+}
+
+/* 'î Ž' */
+/* line 78, scss/partials/_typography.scss */
+.icon-left-dir:before {
+  content: '\e810';
+}
+
+/* 'î ' */
+/* line 79, scss/partials/_typography.scss */
+.icon-right-dir:before {
+  content: '\e80f';
+}
+
+/* 'î ' */
+/* line 80, scss/partials/_typography.scss */
+.icon-down-open:before {
+  content: '\e826';
+}
+
+/* 'î ¦' */
+/* line 81, scss/partials/_typography.scss */
+.icon-left-open:before {
+  content: '\e825';
+}
+
+/* 'î ¥' */
+/* line 82, scss/partials/_typography.scss */
+.icon-right-open:before {
+  content: '\e824';
+}
+
+/* 'î ¤' */
+/* line 83, scss/partials/_typography.scss */
+.icon-up-open:before {
+  content: '\e827';
+}
+
+/* 'î §' */
+/* line 84, scss/partials/_typography.scss */
+.icon-angle-left:before {
+  content: '\e811';
+}
+
+/* 'î ‘' */
+/* line 85, scss/partials/_typography.scss */
+.icon-angle-right:before {
+  content: '\e812';
+}
+
+/* 'î ’' */
+/* line 86, scss/partials/_typography.scss */
+.icon-angle-up:before {
+  content: '\e813';
+}
+
+/* 'î “' */
+/* line 87, scss/partials/_typography.scss */
+.icon-angle-down:before {
+  content: '\e814';
+}
+
+/* 'î ”' */
+/* line 88, scss/partials/_typography.scss */
+.icon-down-big:before {
+  content: '\e819';
+}
+
+/* 'î ™' */
+/* line 89, scss/partials/_typography.scss */
+.icon-left-big:before {
+  content: '\e816';
+}
+
+/* 'î –' */
+/* line 90, scss/partials/_typography.scss */
+.icon-right-big:before {
+  content: '\e817';
+}
+
+/* 'î —' */
+/* line 91, scss/partials/_typography.scss */
+.icon-up-big:before {
+  content: '\e818';
+}
+
+/* 'î ˜' */
+/* line 92, scss/partials/_typography.scss */
+.icon-laptop:before {
+  content: '\e823';
+}
+
+/* 'î £' */
+/* line 93, scss/partials/_typography.scss */
+.icon-cloud-1:before {
+  content: '\e81a';
+}
+
+/* 'î š' */
+/* line 94, scss/partials/_typography.scss */
+.icon-list-bullet:before {
+  content: '\e820';
+}
+
+/* 'î  ' */
+/* line 95, scss/partials/_typography.scss */
+.icon-facebook:before {
+  content: '\e828';
+}
+
+/* 'î ¨' */
+/* line 96, scss/partials/_typography.scss */
+.icon-download-cloud:before {
+  content: '\e801';
+}
+
+/* 'î ' */
+/* line 97, scss/partials/_typography.scss */
+.icon-down-dir:before {
+  content: '\e80d';
+}
+
+/* 'î ' */
+/* scss main style*/
+/* scss main style*/
+/* grids.scss*/
+/* all */
+/* line 10, scss/modules/_home.scss */
+.jumbotron_ {
+  background: #2f6fb2;
+  float: left;
+  width: 100%;
+}
+/* line 14, scss/modules/_home.scss */
+.jumbotron_ .main {
+  background: url("../img/bg-slide.jpg") no-repeat;
+  max-width: 100%;
+  height: 400px;
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 21, scss/modules/_home.scss */
+.jumbotron_ .main .mainSlide {
+  padding-top: 100px;
+  color: #fff;
+  background: none;
+  width: 50%;
+  float: left;
+}
+/* line 27, scss/modules/_home.scss */
+.jumbotron_ .main .mainSlide h1 {
+  text-transform: uppercase;
+  font-size: 34px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+/* line 34, scss/modules/_home.scss */
+.jumbotron_ .main .mainSlide h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 0;
+}
+/* line 39, scss/modules/_home.scss */
+.jumbotron_ .main .mainSlide h3, .jumbotron_ .main .mainSlide .trialBox #trialForm h4, .jumbotron_ .main .trialBox #trialForm .mainSlide h4 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+/* line 43, scss/modules/_home.scss */
+.jumbotron_ .main .mainSlide a.slide-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  min-width: 217px;
+  margin-right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 58, scss/modules/_home.scss */
+.jumbotron_ .main .mainSlide a.slide-btn:hover {
+  border: 2px solid #b1d2f6;
+  background-color: #8abcf3;
+  text-decoration: none;
+  color: #2f6fb2;
+}
+/* line 66, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 38%;
+  padding-top: 60px;
+  text-align: center;
+}
+/* line 73, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm {
+  background: #b1d2f6;
+  background: #90c6ff;
+  /* RGBa with 0.6 opacity */
+  background: rgba(144, 198, 255, 0.7);
+  padding: 35px 10px 42px;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  margin-bottom: 0;
+}
+/* line 82, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm h3, .jumbotron_ .main .trialBox #trialForm h4 {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: x-large;
+  padding: 0;
+  font-weight: normal;
+  text-shadow: 2px 1px 1px #74a8e5;
+}
+/* line 91, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm h4 {
+  color: #2f6fb2;
+  font-size: medium;
+  margin-bottom: 25px;
+  text-shadow: none;
+}
+/* line 98, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm input {
+  width: 280px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 2px solid #b1d2f6;
+  /* firefox 19+ */
+  /* ie */
+  color: #888;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 8px;
+}
+/* line 102, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm input ::-webkit-input-placeholder {
+  color: #b4B4B4;
+}
+/* line 103, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm input ::-moz-placeholder {
+  color: #DEDEDE;
+}
+/* line 104, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm input :-ms-input-placeholder {
+  color: #DEDEDE;
+}
+/* line 105, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm input input:-moz-placeholder {
+  color: #DEDEDE;
+}
+/* line 109, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm input:focus {
+  outline: 0 none;
+  border: 2px solid #6caaee;
+}
+/* line 114, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm legend {
+  color: #fff;
+  font-size: medium;
+  border-bottom: none;
+  margin: 15px 0 0;
+  line-height: 0;
+  display: inline-block;
+}
+/* line 122, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm .checkbox {
+  margin-bottom: 10px;
+}
+/* line 124, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm .checkbox input[type="checkbox"] {
+  display: none;
+}
+/* line 126, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm .checkbox input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  color: #f3f3f3;
+  text-align: center;
+  line-height: 15px;
+}
+/* line 135, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm .checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/* line 144, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm .checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #b1d2f6;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 157, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm button[type="submit"] {
+  width: 280px;
+  padding: 10px 15px;
+  background-color: #2f6fb2;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+/* line 168, scss/modules/_home.scss */
+.jumbotron_ .main .trialBox #trialForm button[type="submit"]:hover {
+  background-color: #fff;
+  border: 2px solid #2f6fb2;
+  color: #2f6fb2;
+}
+
+/* line 181, scss/modules/_home.scss */
+.container {
+  padding: 25px 0;
+  /* #plan {
+  	.scroll {
+  	height: 300px;
+  	overflow: scroll;
+  	}
+  }*/
+  /* #accordion .active, #accordion_r .active {
+  	background-color: $light-blue;
+  } */
+}
+/* line 183, scss/modules/_home.scss */
+.container p {
+  color: #848484;
+}
+/* line 186, scss/modules/_home.scss */
+.container h2.main_h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 0;
+  color: #8abcf3;
+  font-size: xx-large;
+}
+/* line 194, scss/modules/_home.scss */
+.container h3, .container .jumbotron_ .main .trialBox #trialForm h4, .jumbotron_ .main .trialBox #trialForm .container h4 {
+  color: #b7b7b7;
+  text-align: center;
+  font-size: x-large;
+  font-weight: light;
+  margin-bottom: 20px;
+}
+/* line 207, scss/modules/_home.scss */
+.container #benefit {
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 211, scss/modules/_home.scss */
+.container #faq {
+  margin-bottom: 25px;
+}
+/* line 214, scss/modules/_home.scss */
+.container #bigico {
+  margin-bottom: 50px;
+}
+/* line 216, scss/modules/_home.scss */
+.container #bigico h3, .container #bigico .jumbotron_ .main .trialBox #trialForm h4, .jumbotron_ .main .trialBox #trialForm .container #bigico h4 {
+  font-size: 10em;
+  color: #d1d1d1;
+}
+/* line 220, scss/modules/_home.scss */
+.container #bigico p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #c4c4c4;
+  font-size: 1.45em;
+}
+/* line 228, scss/modules/_home.scss */
+.container #accordion, .container #accordion_r {
+  width: 49%;
+  position: relative;
+  float: left;
+}
+/* line 232, scss/modules/_home.scss */
+.container #accordion h5, .container #accordion_r h5 {
+  cursor: pointer;
+  background-color: #2f6fb2;
+  padding: 15px;
+  min-width: 45%;
+  color: white;
+}
+/* line 238, scss/modules/_home.scss */
+.container #accordion h5 span, .container #accordion_r h5 span {
+  position: absolute;
+  right: 10px;
+}
+/* line 243, scss/modules/_home.scss */
+.container #accordion div, .container #accordion_r div {
+  display: none;
+}
+/* line 247, scss/modules/_home.scss */
+.container #accordion {
+  margin-right: 1%;
+}
+/* line 253, scss/modules/_home.scss */
+.container #supply {
+  text-align: center;
+}
+/* line 255, scss/modules/_home.scss */
+.container #supply .planBox {
+  color: white;
+  padding: 20px 25px 25px;
+  text-align: center;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  transition: color 1s ease;
+}
+/* line 260, scss/modules/_home.scss */
+.container #supply .planBox h3, .container #supply .planBox .jumbotron_ .main .trialBox #trialForm h4, .jumbotron_ .main .trialBox #trialForm .container #supply .planBox h4 {
+  color: white;
+  text-transform: uppercase;
+}
+/* line 264, scss/modules/_home.scss */
+.container #supply .planBox p {
+  color: white;
+}
+/* line 267, scss/modules/_home.scss */
+.container #supply .planBox span.icon-down-open {
+  font-size: x-large;
+}
+/* line 271, scss/modules/_home.scss */
+.container #supply #backup.selected {
+  background-color: #b32d3b;
+}
+/* line 274, scss/modules/_home.scss */
+.container #supply #archive.selected {
+  background-color: #2a629e;
+}
+/* line 277, scss/modules/_home.scss */
+.container #supply #backup, .container #supply #allBackup {
+  background-color: #c73242;
+}
+/* line 279, scss/modules/_home.scss */
+.container #supply #backup:hover, .container #supply #allBackup:hover {
+  background-color: #b32d3b;
+}
+/* line 284, scss/modules/_home.scss */
+.container #supply #allBackup:hover {
+  background-color: #d04352;
+}
+/* line 288, scss/modules/_home.scss */
+.container #supply #archive, .container #supply #allArchive {
+  background-color: #2f6fb2;
+}
+/* line 290, scss/modules/_home.scss */
+.container #supply #archive:hover, .container #supply #allArchive:hover {
+  background-color: #2a629e;
+}
+/* line 294, scss/modules/_home.scss */
+.container #supply #archive, .container #supply #backup {
+  cursor: pointer;
+}
+/* line 298, scss/modules/_home.scss */
+.container #supply #allArchive:hover {
+  background-color: #347cc6;
+}
+/* line 301, scss/modules/_home.scss */
+.container #supply #allArchive #closeArchive, .container #supply #allArchive #closeBackup {
+  cursor: pointer;
+}
+
+/* line 310, scss/modules/_home.scss */
+.promo {
+  height: auto;
+  background-color: #eaeaea;
+  width: 100%;
+  clear: left;
+  padding: 50px 20px;
+  margin: 50px 0;
+  float: left;
+}
+/* line 318, scss/modules/_home.scss */
+.promo .wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 321, scss/modules/_home.scss */
+.promo .wrapper p {
+  color: #848484;
+  font-size: medium;
+}
+/* line 325, scss/modules/_home.scss */
+.promo .wrapper h3, .promo .wrapper .jumbotron_ .main .trialBox #trialForm h4, .jumbotron_ .main .trialBox #trialForm .promo .wrapper h4 {
+  color: #5e5e5e;
+  margin-top: 0;
+}
+/* line 329, scss/modules/_home.scss */
+.promo .wrapper div {
+  float: left;
+  width: 60%;
+}
+/* line 333, scss/modules/_home.scss */
+.promo .wrapper a {
+  padding: 10px 45px;
+  background-color: transparent;
+  border: 2px solid #c73242;
+  color: #c73242;
+  text-transform: uppercase;
+  max-width: 280px;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  display: block;
+  float: right;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 344, scss/modules/_home.scss */
+.promo .wrapper a:hover {
+  background-color: #c73242;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+
+/* scss footer style*/
+/* scss main style*/
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?19361446");
+  src: url("../font/fontello.eot?19361446#iefix") format("embedded-opentype"), url("../font/fontello.woff?19361446") format("woff"), url("../font/fontello.ttf?19361446") format("truetype"), url("../font/fontello.svg?19361446#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?19361446#fontello') format('svg');
+  }
+}
+*/
+/* line 23, scss/partials/_typography.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 54, scss/partials/_typography.scss */
+.icon-mail:before {
+  content: '\e803';
+}
+
+/* 'î ƒ' */
+/* line 55, scss/partials/_typography.scss */
+.icon-cloud:before {
+  content: '\e800';
+}
+
+/* 'î €' */
+/* line 56, scss/partials/_typography.scss */
+.icon-ok:before {
+  content: '\e802';
+}
+
+/* 'î ‚' */
+/* line 57, scss/partials/_typography.scss */
+.icon-cancel:before {
+  content: '\e805';
+}
+
+/* 'î …' */
+/* line 58, scss/partials/_typography.scss */
+.icon-cancel-circled:before {
+  content: '\e806';
+}
+
+/* 'î †' */
+/* line 59, scss/partials/_typography.scss */
+.icon-plus-circled:before {
+  content: '\e807';
+}
+
+/* 'î ‡' */
+/* line 60, scss/partials/_typography.scss */
+.icon-plus-squared:before {
+  content: '\e808';
+}
+
+/* 'î ˆ' */
+/* line 61, scss/partials/_typography.scss */
+.icon-plus-squared-small:before {
+  content: '\e809';
+}
+
+/* 'î ‰' */
+/* line 62, scss/partials/_typography.scss */
+.icon-minus-circled:before {
+  content: '\e80c';
+}
+
+/* 'î Œ' */
+/* line 63, scss/partials/_typography.scss */
+.icon-minus-squared:before {
+  content: '\e80b';
+}
+
+/* 'î ‹' */
+/* line 64, scss/partials/_typography.scss */
+.icon-minus-squared-alt:before {
+  content: '\e80a';
+}
+
+/* 'î Š' */
+/* line 65, scss/partials/_typography.scss */
+.icon-link:before {
+  content: '\e82a';
+}
+
+/* 'î ª' */
+/* line 66, scss/partials/_typography.scss */
+.icon-lock:before {
+  content: '\e82b';
+}
+
+/* 'î «' */
+/* line 67, scss/partials/_typography.scss */
+.icon-thumbs-up:before {
+  content: '\e829';
+}
+
+/* 'î ©' */
+/* line 68, scss/partials/_typography.scss */
+.icon-download-cloud-1:before {
+  content: '\e81b';
+}
+
+/* 'î ›' */
+/* line 69, scss/partials/_typography.scss */
+.icon-upload-cloud:before {
+  content: '\e81c';
+}
+
+/* 'î œ' */
+/* line 70, scss/partials/_typography.scss */
+.icon-docs:before {
+  content: '\e821';
+}
+
+/* 'î ¡' */
+/* line 71, scss/partials/_typography.scss */
+.icon-cog:before {
+  content: '\e81e';
+}
+
+/* 'î ž' */
+/* line 72, scss/partials/_typography.scss */
+.icon-wrench:before {
+  content: '\e81f';
+}
+
+/* 'î Ÿ' */
+/* line 73, scss/partials/_typography.scss */
+.icon-calendar:before {
+  content: '\e81d';
+}
+
+/* 'î ' */
+/* line 74, scss/partials/_typography.scss */
+.icon-calendar-empty:before {
+  content: '\e822';
+}
+
+/* 'î ¢' */
+/* line 75, scss/partials/_typography.scss */
+.icon-clock:before {
+  content: '\e815';
+}
+
+/* 'î •' */
+/* line 76, scss/partials/_typography.scss */
+.icon-user:before {
+  content: '\e804';
+}
+
+/* 'î „' */
+/* line 77, scss/partials/_typography.scss */
+.icon-up-dir:before {
+  content: '\e80e';
+}
+
+/* 'î Ž' */
+/* line 78, scss/partials/_typography.scss */
+.icon-left-dir:before {
+  content: '\e810';
+}
+
+/* 'î ' */
+/* line 79, scss/partials/_typography.scss */
+.icon-right-dir:before {
+  content: '\e80f';
+}
+
+/* 'î ' */
+/* line 80, scss/partials/_typography.scss */
+.icon-down-open:before {
+  content: '\e826';
+}
+
+/* 'î ¦' */
+/* line 81, scss/partials/_typography.scss */
+.icon-left-open:before {
+  content: '\e825';
+}
+
+/* 'î ¥' */
+/* line 82, scss/partials/_typography.scss */
+.icon-right-open:before {
+  content: '\e824';
+}
+
+/* 'î ¤' */
+/* line 83, scss/partials/_typography.scss */
+.icon-up-open:before {
+  content: '\e827';
+}
+
+/* 'î §' */
+/* line 84, scss/partials/_typography.scss */
+.icon-angle-left:before {
+  content: '\e811';
+}
+
+/* 'î ‘' */
+/* line 85, scss/partials/_typography.scss */
+.icon-angle-right:before {
+  content: '\e812';
+}
+
+/* 'î ’' */
+/* line 86, scss/partials/_typography.scss */
+.icon-angle-up:before {
+  content: '\e813';
+}
+
+/* 'î “' */
+/* line 87, scss/partials/_typography.scss */
+.icon-angle-down:before {
+  content: '\e814';
+}
+
+/* 'î ”' */
+/* line 88, scss/partials/_typography.scss */
+.icon-down-big:before {
+  content: '\e819';
+}
+
+/* 'î ™' */
+/* line 89, scss/partials/_typography.scss */
+.icon-left-big:before {
+  content: '\e816';
+}
+
+/* 'î –' */
+/* line 90, scss/partials/_typography.scss */
+.icon-right-big:before {
+  content: '\e817';
+}
+
+/* 'î —' */
+/* line 91, scss/partials/_typography.scss */
+.icon-up-big:before {
+  content: '\e818';
+}
+
+/* 'î ˜' */
+/* line 92, scss/partials/_typography.scss */
+.icon-laptop:before {
+  content: '\e823';
+}
+
+/* 'î £' */
+/* line 93, scss/partials/_typography.scss */
+.icon-cloud-1:before {
+  content: '\e81a';
+}
+
+/* 'î š' */
+/* line 94, scss/partials/_typography.scss */
+.icon-list-bullet:before {
+  content: '\e820';
+}
+
+/* 'î  ' */
+/* line 95, scss/partials/_typography.scss */
+.icon-facebook:before {
+  content: '\e828';
+}
+
+/* 'î ¨' */
+/* line 96, scss/partials/_typography.scss */
+.icon-download-cloud:before {
+  content: '\e801';
+}
+
+/* 'î ' */
+/* line 97, scss/partials/_typography.scss */
+.icon-down-dir:before {
+  content: '\e80d';
+}
+
+/* 'î ' */
+/* scss main style*/
+/* scss main style*/
+/* grids.scss*/
+/* all */
+/* line 10, scss/modules/_footer.scss */
+footer {
+  background-color: #393939;
+  color: white;
+  min-height: 200px;
+  margin-top: 80px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 35px;
+}
+/* line 19, scss/modules/_footer.scss */
+footer .max-width {
+  width: 960px;
+  margin: 60px auto 20px;
+}
+/* line 22, scss/modules/_footer.scss */
+footer .max-width ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/* line 26, scss/modules/_footer.scss */
+footer .max-width ul li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 29, scss/modules/_footer.scss */
+footer .max-width ul li a {
+  color: white;
+  text-transform: uppercase;
+  padding: 6px 40px;
+  border-left: 1px solid #999999;
+  display: inline-block;
+}
+/* line 38, scss/modules/_footer.scss */
+footer .max-width #social-share {
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* @import "vendor/colorpicker";
+@import "vendor/jquery.ui.core"; */
+/* line 12, scss/main_style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  scrollbar-face-color: #b1d2f6;
+}
+
+/* line 20, scss/main_style.scss */
+::-webkit-scrollbar {
+  width: 10px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+/* this targets the default scrollbar (compulsory) */
+/* line 25, scss/main_style.scss */
+::-webkit-scrollbar-track:vertical {
+  background-color: #eaeaea;
+}
+
+/* the new scrollbar will have a flat appearance with the set background color */
+/* line 29, scss/main_style.scss */
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #8abcf3;
+}
+
+/* this will style the thumb, ignoring the track */
+/* line 32, scss/main_style.scss */
+::-webkit-scrollbar-track-piece:vertical {
+  background-color: #eaeaea;
+}
+
+/* line 35, scss/main_style.scss */
+::-webkit-scrollbar-button:vertical {
+  display: none;
+}
+
+/* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+/* line 38, scss/main_style.scss */
+::-webkit-scrollbar-corner:vertical {
+  background-color: #FFF;
+}
+
+/* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+/* line 41, scss/main_style.scss */
+::-webkit-resizer:vertical {
+  background-color: #FFF;
+}
+
+/* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+/* line 45, scss/main_style.scss */
+.full {
+  width: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}

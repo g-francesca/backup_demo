@@ -1,0 +1,44 @@
+/* scss footer style*/
+// Partials
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/figures";
+@import "partials/grids";
+@import "partials/base";
+// ...
+
+footer {
+	background-color: $darker-gray;
+	color: white;
+	min-height: 200px;
+	margin-top: 80px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 35px;
+	.max-width {
+		width: $wrapper;
+		margin:60px auto 20px;
+		ul {
+			margin: 0;
+			padding:0;
+			display:block;
+			li {
+				list-style: none;
+				display: inline-block;
+				a {
+					color: white;
+					text-transform: uppercase;
+					padding: 6px 40px;
+					border-left: 1px solid darken(white, 40%);
+					display: inline-block;
+				}
+			}
+		}
+		#social-share {
+			display: block;
+			text-align:center;
+			margin: 30px 0;
+		}
+	}
+}

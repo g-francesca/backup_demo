@@ -1,0 +1,51 @@
+/* scss main style*/
+// Modules and Variables
+@import "modules/header";
+@import "modules/home";
+@import "modules/footer";
+
+// Third-party
+/* @import "vendor/colorpicker";
+@import "vendor/jquery.ui.core"; */
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+
+html, body {
+	margin:0;
+	padding:0;
+	border:0;
+	vertical-align: baseline;
+	scrollbar-face-color: $lighter-blue;
+}
+
+::-webkit-scrollbar {
+      width: 10px;
+      @include border-radius(15px);
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track:vertical {
+      background-color: lighten($gray, 40%);
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb:vertical {
+      background-color: $light-blue;
+} /* this will style the thumb, ignoring the track */
+::-webkit-scrollbar-track-piece:vertical {
+	background-color: lighten($gray, 40%);
+}
+::-webkit-scrollbar-button:vertical {
+      display:none;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+::-webkit-scrollbar-corner:vertical {
+      background-color: #FFF;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+::-webkit-resizer:vertical {
+      background-color: #FFF;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+.full {
+	width: 100%;
+	vertical-align: baseline;
+	margin:0;
+	padding:0;
+}
+

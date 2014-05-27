@@ -1,0 +1,28 @@
+/* scss main style*/
+@mixin buttons {
+  a.button, button {
+    @include button(black, silver);
+    &.blue  { @include button(white, blue); }
+    &.red   { @include button(white, red); }
+    &.green { @include button(white, green); }
+  }
+}
+
+// Button mixin
+@mixin button($text-color, $bg-color) {
+  font: 12px bold 'Open Sans';
+  padding: 3px 8px;
+  @include color-button($text-color, $bg-color);
+  &:hover, &:focus { 
+  	@include color-button($text-color, lighten($bg-color, 10%)); 
+  }
+  &:active { background: darken($bg-color, 5%); }
+}
+
+// Color button mixin
+@mixin color-button($text-color, $bg-color) {
+  color: $text-color;
+  background: $bg-color;
+}
+
+

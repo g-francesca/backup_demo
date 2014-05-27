@@ -1,0 +1,97 @@
+/* scss main style*/
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?19361446');
+  src: url('../font/fontello.eot?19361446#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?19361446') format('woff'),
+       url('../font/fontello.ttf?19361446') format('truetype'),
+       url('../font/fontello.svg?19361446#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?19361446#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-mail:before { content: '\e803'; } /* 'î ƒ' */
+.icon-cloud:before { content: '\e800'; } /* 'î €' */
+.icon-ok:before { content: '\e802'; } /* 'î ‚' */
+.icon-cancel:before { content: '\e805'; } /* 'î …' */
+.icon-cancel-circled:before { content: '\e806'; } /* 'î †' */
+.icon-plus-circled:before { content: '\e807'; } /* 'î ‡' */
+.icon-plus-squared:before { content: '\e808'; } /* 'î ˆ' */
+.icon-plus-squared-small:before { content: '\e809'; } /* 'î ‰' */
+.icon-minus-circled:before { content: '\e80c'; } /* 'î Œ' */
+.icon-minus-squared:before { content: '\e80b'; } /* 'î ‹' */
+.icon-minus-squared-alt:before { content: '\e80a'; } /* 'î Š' */
+.icon-link:before { content: '\e82a'; } /* 'î ª' */
+.icon-lock:before { content: '\e82b'; } /* 'î «' */
+.icon-thumbs-up:before { content: '\e829'; } /* 'î ©' */
+.icon-download-cloud-1:before { content: '\e81b'; } /* 'î ›' */
+.icon-upload-cloud:before { content: '\e81c'; } /* 'î œ' */
+.icon-docs:before { content: '\e821'; } /* 'î ¡' */
+.icon-cog:before { content: '\e81e'; } /* 'î ž' */
+.icon-wrench:before { content: '\e81f'; } /* 'î Ÿ' */
+.icon-calendar:before { content: '\e81d'; } /* 'î ' */
+.icon-calendar-empty:before { content: '\e822'; } /* 'î ¢' */
+.icon-clock:before { content: '\e815'; } /* 'î •' */
+.icon-user:before { content: '\e804'; } /* 'î „' */
+.icon-up-dir:before { content: '\e80e'; } /* 'î Ž' */
+.icon-left-dir:before { content: '\e810'; } /* 'î ' */
+.icon-right-dir:before { content: '\e80f'; } /* 'î ' */
+.icon-down-open:before { content: '\e826'; } /* 'î ¦' */
+.icon-left-open:before { content: '\e825'; } /* 'î ¥' */
+.icon-right-open:before { content: '\e824'; } /* 'î ¤' */
+.icon-up-open:before { content: '\e827'; } /* 'î §' */
+.icon-angle-left:before { content: '\e811'; } /* 'î ‘' */
+.icon-angle-right:before { content: '\e812'; } /* 'î ’' */
+.icon-angle-up:before { content: '\e813'; } /* 'î “' */
+.icon-angle-down:before { content: '\e814'; } /* 'î ”' */
+.icon-down-big:before { content: '\e819'; } /* 'î ™' */
+.icon-left-big:before { content: '\e816'; } /* 'î –' */
+.icon-right-big:before { content: '\e817'; } /* 'î —' */
+.icon-up-big:before { content: '\e818'; } /* 'î ˜' */
+.icon-laptop:before { content: '\e823'; } /* 'î £' */
+.icon-cloud-1:before { content: '\e81a'; } /* 'î š' */
+.icon-list-bullet:before { content: '\e820'; } /* 'î  ' */
+.icon-facebook:before { content: '\e828'; } /* 'î ¨' */
+.icon-download-cloud:before { content: '\e801'; } /* 'î ' */
+.icon-down-dir:before { content: '\e80d'; } /* 'î ' */

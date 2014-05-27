@@ -1,0 +1,68 @@
+// Variabili SASS
+
+//Colori
+
+$dark-blue: #2f6fb2;
+$light-blue: #8abcf3;
+$lighter-blue: #b1d2f6;
+$gray: #848484;
+$lighter-gray: #aaa;
+$darker-gray: #393939;
+$bg-gray: #ededed;
+$white: #fff;
+$red: #c73242;
+
+// Font
+$font: 'Lato', sans-serif;
+
+// mixins
+
+@mixin border-radius($radius) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin color-button($text-color, $bg-color, $border) {
+	text-shadow: 3px 3px 3px $shadow;
+}
+
+@mixin box-sizing {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+}
+
+@mixin transition($sec) {
+	-webkit-transition: color $sec ease;
+   -moz-transition: color $sec ease;
+   -o-transition: color $sec ease;
+   -ms-transition: color $sec ease;
+   transition: color $sec ease;
+}
+
+@mixin transition-back($sec) {
+	-webkit-transition: background-color $sec ease;
+   -moz-transition: background-color $sec ease;
+   -o-transition: background-color $sec ease;
+   -ms-transition: background-color $sec ease;
+   transition: background-color $sec ease;
+}
+
+/* all */
+@mixin placeholder {
+::-webkit-input-placeholder { color:#b4b4b4; text-align:center; }
+::-moz-placeholder { color:#b4b4b4; text-align:center; } /* firefox 19+ */
+:-ms-input-placeholder { color:#b4b4b4; text-align:center; } /* ie */
+input:-moz-placeholder { color:#b4b4b4; text-align:center; }
+}
+
+@mixin gradient($top, $center, $bottom) {
+	background: $top;
+	background: -webkit-linear-gradient(top, $top 0%, $center 40%, $bottom 100%);
+	background: -moz-linear-gradient(top, $top 0%, $center 40%, $bottom 100%);
+	background: -o-linear-gradient(top, $top 0%, $center 40%, $bottom 100%);
+	background: -ms-linear-gradient(top, $top 0%, $center 40%, $bottom 100%);
+	background: linear-gradient(top, $top 0%, $center 40%, $bottom 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
